@@ -4,9 +4,9 @@ themeToggle.addEventListener("click", function () {
     document.body.classList.toggle("dark");
 
     if (document.body.classList.contains("dark")) {
-        themeToggle.textContent = "☀️ Light Mode";
+        themeToggle.textContent = "☀️";
     } else {
-        themeToggle.textContent = "🌙 Dark Mode";
+        themeToggle.textContent = "🌙";
     }
 });
 

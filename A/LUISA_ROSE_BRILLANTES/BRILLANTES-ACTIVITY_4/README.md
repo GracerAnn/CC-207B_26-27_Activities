@@ -5,7 +5,7 @@ A personal portfolio website for Luisa Rose D. Brillantes, a 3rd-year BS Informa
 ## Project Structure
 
 ```
-luisa-rose-brillantes---portfolio/
+BRILLANTES-ACTIVITY_4/
 ├── index.html   # Main page (all sections: Hero, About, Projects, Resume, Contact)
 ├── styles.css   # All styling, including responsive/mobile layout
 └── script.js    # Mobile nav toggle + footer year auto-update

@@ -1,14 +1,27 @@
-# Luisa Rose Brillantes — Portfolio
+# Luisa Rose Brillantes — Portfolio Website
 
-A personal portfolio website for Luisa Rose D. Brillantes, a 3rd-year BS Information Technology student (Cybersecurity major) at West Visayas State University. Built with plain HTML, CSS, and JavaScript — no frameworks or build tools required. This project was created with AI-assisted guidance to help with design refinement, layout improvements, and asset generation.
+A personal portfolio website for Luisa Rose D. Brillantes, a 3rd-year BS Information Technology student majoring in Cybersecurity at West Visayas State University.
+
+This project was created as a unit activity and built using plain HTML, CSS, and JavaScript. It includes a responsive landing page with sections for introduction, about, projects, resume highlights, and contact information.
+
+## Project Overview
+
+This portfolio website showcases:
+- personal background and education
+- technical skills and tools
+- featured projects
+- contact and social links
+- responsive design for desktop and mobile devices
 
 ## Project Structure
 
 ```
-BRILLANTES-ACTIVITY_4/
-├── index.html   # Main page (all sections: Hero, About, Projects, Resume, Contact)
-├── styles.css   # All styling, including responsive/mobile layout
-└── script.js    # Mobile nav toggle + footer year auto-update
+BRILLANTES-UNIT_4_ACTIVITY/
+├── index.html   # Main webpage structure
+├── styles.css   # Styling and responsive layout
+├── script.js    # Mobile navigation and dynamic footer year
+├── README.md    # Project documentation
+└── assets/      # Optional project assets (if added later)
 ```
 
 ## How to Run
@@ -17,59 +30,50 @@ BRILLANTES-ACTIVITY_4/
 
 1. Open a terminal in the project folder.
 2. Run:
-   ```powershell
-   py -m http.server 8000 --bind 127.0.0.1
-   ```
-3. Open your browser and go to:
-   ```
-   http://127.0.0.1:8000
-   ```
 
-> Python 3.14+ binds to IPv6 (`[::]`) by default, which causes `ERR_ADDRESS_INVALID` in most browsers. The `--bind 127.0.0.1` flag forces IPv4 and fixes this.
+```powershell
+py -m http.server 8000 --bind 127.0.0.1
+```
 
-### Option 2 — Open directly in browser
+3. Open the browser and go to:
 
-Right-click `index.html` → **Open With** → choose your browser.
+```text
+http://127.0.0.1:8000
+```
 
-This works for basic viewing since the project has no fetch calls or ES modules, but the Python server approach is preferred.
+> Using `--bind 127.0.0.1` ensures the page loads correctly on local machines without IPv6 address issues.
 
-### Option 3 — Live Server (VS Code / Kiro)
+### Option 2 — Open directly in the browser
 
-If you have the **Live Server** extension installed, right-click `index.html` → **Open with Live Server**. It will auto-reload on file saves.
+Open `index.html` directly in your browser.
 
-## Sections
+This works for basic viewing, but using a local server is recommended.
 
-| Section  | Description                                              |
-|----------|----------------------------------------------------------|
-| Hero     | Introduction, CTA buttons, and stat highlights           |
-| About    | Background blurb and education details                   |
-| Projects | 5 featured projects with tech stack tags                 |
-| Resume   | Core skills and tools/tech chips                         |
-| Contact  | Email, phone, location, GitHub and LinkedIn links        |
+### Option 3 — VS Code Live Server
+
+If you have the Live Server extension installed, right-click `index.html` and select "Open with Live Server".
+
+## Sections Included
+
+- Hero section
+- About section
+- Projects section
+- Resume/skills section
+- Contact section
 
 ## Tech Stack
 
-- **HTML5** — semantic markup
-- **CSS3** — custom properties, CSS Grid, responsive breakpoints, `backdrop-filter`
-- **JavaScript (vanilla)** — mobile menu toggle, dynamic copyright year
-- **Google Fonts** — Inter (loaded via CDN)
-
-## Responsive Behavior
-
-- `≤ 860px` — single-column layout for hero, about, resume, and projects (2-col grid)
-- `≤ 640px` — hamburger nav, single-column projects grid
-
-## HTML Validation
-
-The HTML has been validated with [html-validate](https://html-validate.org/) — 0 errors, 0 warnings.
-
-Fixes applied:
-- Removed self-closing syntax (`/>`) from void elements (`<meta>`, `<link>`)
-- Added `type="button"` to the mobile nav toggle `<button>`
-- Encoded all raw `&` characters as `&amp;` throughout the document
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
 
 ## Notes
 
-- No dependencies or `npm install` needed — just open and run.
-- Internet connection is required on first load for Google Fonts to render correctly (Inter font).
-- The footer year updates automatically via JavaScript.
+- No framework or build tool is required.
+- Internet access is needed for the Google Fonts to load properly.
+- The footer year updates automatically with JavaScript.
+
+## Submission Note
+
+This activity is submitted as part of the course repository and follows the required folder naming and file organization format.

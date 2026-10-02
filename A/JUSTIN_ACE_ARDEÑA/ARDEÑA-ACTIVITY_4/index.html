@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Justin Ardeña - Portfolio
-    </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Justin Ardeña - Portfolio</title>
     <meta
       name="description"
       content="Portfolio of Justin Ace D. Ardeña, a 3rd-year BSIT (Cybersecurity) student building full-stack and AI/ML systems."
@@ -32,12 +33,24 @@
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
+    <!-- FEATURE: scroll progress bar -->
+    <div class="progress" aria-hidden="true"></div>
 
     <!-- HEADER / NAVIGATION -->
     <header class="topbar">
       <div class="wrap bar">
         <a href="#top" class="brand">justin-ardena</a>
-        <nav aria-label="Main">
+        <!-- FEATURE: burger menu button (shows on tablets and phones) -->
+        <button
+          class="burger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="menu" aria-label="Main">
           <a href="#about">about</a>
           <a href="#skills">skills</a>
           <a href="#projects">projects</a>
@@ -89,7 +102,9 @@
 justin ace ardeña — building software and Doing Networking & Cybersecurity in Between.
 
 <span class="dim">$</span> ls focus/
-cybersecurity/  networking/  full-stack/  Newbie ai-ml/</pre>
+cybersecurity/  networking/  full-stack/  Newbie ai-ml/
+
+<span class="dim">$</span> <span class="cursor" aria-hidden="true"></span></pre>
 
       <!-- ABOUT -->
       <section id="about">
@@ -348,7 +363,6 @@ cybersecurity/  networking/  full-stack/  Newbie ai-ml/</pre>
     <!-- FOOTER -->
     <footer class="wrap foot">
       <span>© <span id="yr">2026</span> Justin Ace D. Ardeña</span>
-      <span>HTML · CSS · JavaScript</span>
     </footer>
     <script src="script.js"></script>
   </body>
